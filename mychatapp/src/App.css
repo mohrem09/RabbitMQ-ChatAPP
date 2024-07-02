@@ -1,0 +1,37 @@
+/* App.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.chat-sidebar {
+  overflow-y: auto;
+  height: calc(100vh - 56px); /* 56px is the height of the fixed top bar */
+}
+
+.chat-sidebar .list-group-item {
+  cursor: pointer;
+}
+
+.chat-sidebar .list-group-item.active {
+  background-color: #343a40;
+}
+
+.chat-card {
+  height: 80vh;
+  max-height: 600px;
+}
+
+.message {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.card-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+}
